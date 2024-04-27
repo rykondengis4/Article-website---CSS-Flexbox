@@ -1,0 +1,159 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+
+/* container */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-kiri {
+  flex: 1;
+  order: 1;
+  margin-left: 15px;
+}
+
+.sidebar-kanan {
+  flex: 1;
+  order: 3;
+}
+
+/* container dua */
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.layanan {
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.2s;
+  margin-bottom: 20px;
+}
+
+.layanan:hover {
+  transform: scale(1.1);
+}
+
+.layanan.satu {
+  background-color: lightblue;
+}
+.layanan.dua {
+  background-color: lightgreen;
+}
+.layanan.tiga {
+  background-color: salmon;
+}
+
+/* container tiga */
+.container-tiga {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 50%;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+/* container empat */
+.container-empat {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.card {
+  border: 1px solid #aaa;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.card .header {
+  height: 150px;
+  background-color: #666;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card.besar {
+  transform: scale(1.12);
+}
+
+/* container lima */
+.container-lima {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 5px solid black;
+  display: flex;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  color: white;
+  margin: auto;
+  display: flex;
+}
+
+.kotak span {
+  margin: auto;
+}
+
+/* responsive */
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+  }
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+  .layanan {
+    width: 30%;
+  }
+  .thumbnail {
+    width: 25%;
+  }
+  .container-empat {
+    display: flex;
+  }
+  .card {
+    margin: 10px;
+  }
+}
